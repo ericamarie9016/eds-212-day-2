@@ -56,7 +56,7 @@ ggplot(data = penguins,
 Jitterplot of flipper length by species
 ```{r}
 ggplot(data = penguins,
-       aes(x = species, y = flipper_length_mm)) +
+       aes(x = species, y = flipper_length_mm, color = species)) +
   geom_jitter() +
   labs(title = "Flipper length by species", x = "Species", y = "Flipper Length (mm)")
 ```
